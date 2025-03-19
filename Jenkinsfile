@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ -o pes2ug22cs134-1 pes2ug22cs134-1.cpp' 
+                    sh 'g++ -o PES2UG22CS134-1 PES2UG22CS134-1.cpp' 
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './pes2ug22cs134-1'  
+                    sh './PES2UG22CS134-1'  
                 }
             }
         }
